@@ -28,7 +28,7 @@ questions = [
     ] 
   },
   { 
-    q: 'The Following documents are required for a mortgage: Statutory Approvals, Tax Clearance Certificate, Letter of <br>Offer and University Credentials.Is this true or false?', 
+    q: 'The Following documents are required for a mortgage: Statutory Approvals, Tax Clearance Certificate, Letter of Offer and University Credentials.Is this true or false?', 
     a: 'False', 
     choices: [
       'True', 
