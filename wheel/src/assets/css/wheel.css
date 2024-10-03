@@ -1,0 +1,79 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    overscroll-behavior-y: contain;
+    position: static;
+    width: 100%;
+    touch-action: none;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: stretch;
+    align-items: stretch; */
+    background-image: url("../images/rblWheelPageBG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .wheel-wrapper {
+    overflow: hidden;
+    height: 50vh;
+    width: 100%; 
+    transform: translateY(-20%); /* adjust as needed */
+
+    /* margin-top: 30%; */
+  }
+
+  .gui-wrapper {
+    padding: 10px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  select {
+    padding: 2px;
+  }
+  label {
+    margin-right: 5px;
+  }
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+  }
+  .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #009AC7;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
